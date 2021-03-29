@@ -16,26 +16,52 @@
 
 
 
-var budget = prompt('what is your budget?');
-while ( budget < '5000') {
-    confirm("you should have at least 5000$!" )
-    budget = prompt ("what is your budget?");
-}
+// // var budget = prompt('what is your budget?');
+// // while ( budget < '5000') {
+// //     confirm("you should have at least 5000$!" )
+// //     budget = prompt ("what is your budget?");
+// // }
 
 
-var visit = prompt("Is this your first time in our site ?" , "yes , no");
+// // var visit = prompt("Is this your first time in our site ?" , "yes , no");
 
-if (visit == 'yes'){
-    confirm("welcome to our website , hope you will enjoy!" )
-}
-    else if ( visit == 'no') {
+// // if (visit == 'yes'){
+// //     confirm("welcome to our website , hope you will enjoy!" )
+// // }
+// //     else if ( visit == 'no') {
 
-        var rate = prompt ("could you rate our website please ?", "1-5");
+// //         var rate = prompt ("could you rate our website please ?", "1-5");
+// //         while (rate < 0 || rate > 5 ){
+// //         rate = prompt ("could you rate our website please ?", "1-5");
+// //     }
+// //     }
+
+// // for(var i = 1 ; i <=rate; i++ ){
+// //      document.write ('<img src="https://cdn.pixabay.com/photo/2013/07/12/19/22/hitch-154664__340.png"/>');
+// //     }
+
+
+// var c = 'o';
+// while( c.length <= 20 ) {
+//   console.log( c );
+//   c = c + c;
+// }
+
+
+function rating () {
+
+    var rate = prompt ("could you rate our website please ?", "1-5");
         while (rate < 0 || rate > 5 ){
         rate = prompt ("could you rate our website please ?", "1-5");
-    }
-    }
+}
 
 for(var i = 1 ; i <=rate; i++ ){
-     document.write ('<img src="https://cdn.pixabay.com/photo/2013/07/12/19/22/hitch-154664__340.png"/>');
-    }
+    document.write ('<img src="https://cdn.pixabay.com/photo/2013/07/12/19/22/hitch-154664__340.png"/>'); 
+  }
+  
+return rate ;
+}
+
+rating () ;
+
+
